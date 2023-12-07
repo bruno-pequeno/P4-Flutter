@@ -67,6 +67,12 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
+  @override
+  void initState() {
+    super.initState();
+    initWords();
+  }
+
   void initWords() {
     finishedGame = false;
     resetGame = false;
@@ -213,12 +219,6 @@ class _GameScreenState extends State<GameScreen> {
         ).show();
       }
     });
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    initWords();
   }
 
   @override
